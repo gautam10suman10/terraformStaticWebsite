@@ -27,37 +27,6 @@ resource "aws_cloudfront_distribution" "terraformTest" {
     }
   }
   
-  # count = length(var.error)
-  # for err in var.error:  
-  #   custom_error_response {
-
-  #     error_caching_min_ttl = 3000
-  #     error_code            = each.key
-  #     response_code         = 200
-  #     response_page_path    = "/right-sidebar.html"
-  
-  # }
-    
-  # custom_error_response {
-
-  #   error_caching_min_ttl = 3000
-  #   error_code            = var.error[1]
-  #   response_code         = 200
-  #   response_page_path    = "/right-sidebar.html"
-  # }
-  # custom_error_response {
-  #   error_caching_min_ttl = 3000
-  #   error_code            = 403
-  #   response_code         = 200
-  #   response_page_path    = "/right-sidebar.html"
-  # }
-  # custom_error_response {
-  #   error_caching_min_ttl = 3000
-  #   error_code            = 400
-  #   response_code         = 200
-  #   response_page_path    = "/right-sidebar.html"
-  # }
-
   enabled             = true
   is_ipv6_enabled     = false
   default_root_object = "index.html"
